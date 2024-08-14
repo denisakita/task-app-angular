@@ -1,0 +1,36 @@
+.toDo-form-container {
+  max-width: 500px;
+  margin: 54px auto;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.update-button {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+.update-button:hover {
+  background-color: var(--text-color-shadow);
+  color: var(--background-color);
+
+}
+
+.cancel-button {
+  background-color: var(--accent-color);
+}
+
+.cancel-button:hover {
+  background-color: var(--accent-color-shadow);
+}

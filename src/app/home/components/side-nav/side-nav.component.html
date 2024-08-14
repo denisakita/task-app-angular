@@ -1,0 +1,38 @@
+<mat-toolbar>
+  <button mat-icon-button aria-label="Menu icon" class="toggle-menu" (click)="toggleMenu()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <h1>ToDo App</h1>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="account-settings" [matMenuTriggerFor]="menu_account" aria-label="Account Settings">
+    <mat-icon>manage_accounts</mat-icon>
+  </button>
+  <mat-menu #menu_account="matMenu">
+    <button mat-menu-item (click)="logout()">
+      <mat-icon>logout</mat-icon>
+      <span>Logout</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>
+
+<mat-sidenav-container autosize="true">
+  <mat-sidenav [ngClass]="{'expanded': !isCollapsed}" [mode]="isMobile ? 'over' : 'side'" [opened]="!isMobile" #sidenav>
+    <mat-nav-list>
+      <ng-container *ngFor="let item of menu; let i = index;">
+        <a mat-list-item class="list-item" [routerLink]="item.path"
+           [class.active]="isActive(item)" (click)="setActive(item)"
+
+        >
+        <span class="entry">
+        <mat-icon>{{ item.icon }}</mat-icon>
+          <span *ngIf="!isCollapsed">{{ item.name }}</span>
+        </span>
+        </a>
+      </ng-container>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

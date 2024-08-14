@@ -1,0 +1,33 @@
+<div class="toDo-form-container">
+  <form [formGroup]="toDoForm" (ngSubmit)="saveToDo()">
+    <h1 mat-dialog-title>{{ isEditMode ? 'Edit ToDo' : 'Add ToDo' }}</h1>
+    <div mat-dialog-content>
+
+      <mat-form-field class="full-width">
+        <mat-label>Title</mat-label>
+        <input matInput formControlName="title">
+        <mat-error *ngIf="toDoForm.get('title')?.hasError('required')">Title is required</mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Description</mat-label>
+        <textarea matInput formControlName="description"></textarea>
+      </mat-form-field>
+
+      <mat-form-field class="full-width custom-datepicker-background">
+        <mat-label class="custom-datepicker-color">Deadline</mat-label>
+        <input matInput formControlName="deadline" [matDatepicker]="picker" required>
+        <mat-datepicker-toggle matSuffix [for]="picker" class="picker custom-datepicker-color"></mat-datepicker-toggle>
+        <mat-datepicker #picker class="picker custom-date-picker"></mat-datepicker>
+      </mat-form-field>
+
+
+      <mat-checkbox formControlName="done">Done</mat-checkbox>
+
+    </div>
+    <div class="modal-footer">
+      <button mat-raised-button class="update-button" type="submit">{{ isEditMode ? 'Update' : 'Add' }}</button>
+      <button mat-raised-button type="button" class="cancel-button" (click)="closeToDoForm(false)">Cancel</button>
+    </div>
+  </form>
+</div>

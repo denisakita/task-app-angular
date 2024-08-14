@@ -1,0 +1,74 @@
+{
+  "todos": [
+    {
+      "title": "Complete Angular Assignment",
+      "description": "Finish the Angular assignment by adding CRUD functionality.",
+      "done": false,
+      "deadline": "2024-06-02T22:00:00.000Z",
+      "id": "1"
+    },
+    {
+      "title": "Read Angular Book",
+      "description": "Read chapters 3 and 4 of the new Angular book.",
+      "done": false,
+      "deadline": "2024-06-11T22:00:00.000Z",
+      "id": "2"
+    },
+    {
+      "title": "Grocery Shopping",
+      "description": "Buy vegetables, fruits, and other essentials for the week.",
+      "done": false,
+      "deadline": "2024-06-01T22:00:00.000Z",
+      "id": "3"
+    },
+    {
+      "title": "Prepare Presentation",
+      "description": "Create slides for the upcoming project presentation.",
+      "done": false,
+      "deadline": "2024-06-20T22:00:00.000Z",
+      "id": "4"
+    },
+    {
+      "title": "Finish Documentation",
+      "description": "Complete the documentation for the new feature implementation.",
+      "done": true,
+      "deadline": "2024-06-27T22:00:00.000Z",
+      "id": "5"
+    },
+    {
+      "title": "Review PRs",
+      "description": "Review the pending pull requests in the repository.",
+      "done": true,
+      "deadline": "2024-06-17T22:00:00.000Z",
+      "id": "6"
+    },
+    {
+      "title": "Plan Weekly Meeting",
+      "description": "Set agenda and prepare points for the weekly team meeting.",
+      "done": true,
+      "deadline": "2024-06-12T22:00:00.000Z",
+      "id": "7"
+    },
+    {
+      "title": "Update Dependencies",
+      "description": "Update the project dependencies to their latest versions.",
+      "done": false,
+      "deadline": "2024-06-26T22:00:00.000Z",
+      "id": "8"
+    },
+    {
+      "title": "Code Refactoring",
+      "description": "Refactor the authentication module for better performance.",
+      "done": false,
+      "deadline": "2024-06-16T22:00:00.000Z",
+      "id": "9"
+    },
+    {
+      "title": "Test New Features",
+      "description": "Perform tests on the new features before deployment.",
+      "done": true,
+      "deadline": "2024-06-23T22:00:00.000Z",
+      "id": "10"
+    }
+  ]
+}

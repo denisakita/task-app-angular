@@ -1,0 +1,81 @@
+h1 {
+  padding: 0 1rem;
+  color: #fff;
+}
+
+h2 {
+  padding: 1rem;
+}
+
+.toggle-menu {
+  color: #fff;
+}
+.account-settings{
+  color: #fff;
+
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background: var(--secondary-color);
+}
+
+mat-sidenav-container {
+  height: 100%;
+}
+
+mat-sidenav {
+  padding-top: 3.5rem;
+  transition: width 0.3s ease;
+  @media screen and (min-width: 600px) {
+    padding-top: 4rem;
+  }
+
+  .entry {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    color: var(--secondary-color);
+  }
+
+
+}
+
+mat-sidenav-content {
+  padding-top: 3.5rem;
+  @media screen and (min-width: 600px) {
+    padding-top: 4rem;
+    background: var(--accent-color-shadow);
+  }
+}
+
+
+.entry:hover {
+  background: var(--secondary-color);
+  color: white !important;
+  border-radius: 15px;
+
+}
+
+
+.expanded {
+  width: 250px;
+}
+
+.active .entry {
+  background: var(--secondary-color);
+  color: white !important;
+  border-radius: 15px;
+}
+
+.list-item{
+  margin-bottom: 8px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
